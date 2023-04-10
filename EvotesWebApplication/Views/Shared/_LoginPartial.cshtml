@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@using EvotesWebApplication.Data
+@inject SignInManager<Voters> SignInManager
+@inject UserManager<Voters> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
